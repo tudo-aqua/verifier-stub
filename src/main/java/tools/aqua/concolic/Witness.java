@@ -1,3 +1,9 @@
+/*
+ *
+ * inspired by the class org.sosy_lab.sv_benchmarks.Verifier from SVCOMP
+ *
+ */
+
 package tools.aqua.concolic;
 
 public class Witness {
@@ -17,7 +23,12 @@ public class Witness {
 		ensureIndexExists(id);
 		int idx = counters[id];
 		counters[id]++;
-		Verifier.assume(assumptions[idx]);
+		Verifier.assume(idx < assumptions.length ? assumptions[idx] : true);
+	}
+
+	public static <T> T assume(T value, int id, boolean ... assumptions) {
+		assume(id, assumptions);
+		return value;
 	}
 
 	public static void invariant(boolean invariant) {

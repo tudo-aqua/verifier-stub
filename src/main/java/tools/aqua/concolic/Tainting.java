@@ -7,6 +7,10 @@
 package tools.aqua.concolic;
 
 public class Tainting {
+    
+    // colors for vulnerabilities of securibench-micro
+    static int SQL_INJECTION;
+    static int XSS;
 
     // taint value with color
     public static int taint(int value, int color) {

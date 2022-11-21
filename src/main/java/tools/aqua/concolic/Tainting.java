@@ -12,6 +12,7 @@ public class Tainting {
     public static final int SQL_INJECTION = 1;
     public static final int XSS = 2;
     public static final int IFSPEC = 3;
+    public static final int FILE_OPERATIONS = 4;
 
     // taint value with color
     public static int taint(int value, int color) {

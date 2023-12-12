@@ -15,6 +15,7 @@ public class Tainting {
     public static final int FILE_OPERATIONS = 4;
     public static final int INTERNAL_INFO = 5;
     public static final int CMD_INJECTION = 6;
+    public static final int WEAK_HASHING_CONFIG = 7;
 
     // taint value with color
     public static int taint(int value, int color) {
@@ -128,6 +129,9 @@ public class Tainting {
     }
 
     public static void check(Object value, int color) {
+    }
+
+    public static void valueCheckFailed(String value, String forbiddenValue, int color) {
     }
 
     // stop taint analysis

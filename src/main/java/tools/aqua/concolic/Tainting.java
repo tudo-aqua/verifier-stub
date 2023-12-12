@@ -14,6 +14,7 @@ public class Tainting {
     public static final int IFSPEC = 3;
     public static final int FILE_OPERATIONS = 4;
     public static final int INTERNAL_INFO = 5;
+    public static final int CMD_INJECTION = 6;
 
     // taint value with color
     public static int taint(int value, int color) {

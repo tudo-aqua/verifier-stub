@@ -16,6 +16,7 @@ public class Tainting {
     public static final int INTERNAL_INFO = 5;
     public static final int CMD_INJECTION = 6;
     public static final int WEAK_HASHING_CONFIG = 7;
+    public static final int WEAK_CRYPTO_CONFIG = 8;
 
     // taint value with color
     public static int taint(int value, int color) {

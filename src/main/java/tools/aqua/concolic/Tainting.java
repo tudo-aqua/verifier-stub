@@ -135,6 +135,16 @@ public class Tainting {
     public static void valueCheckFailed(String value, String forbiddenValue, int color) {
     }
 
+
+    public static void transferTaint(String from, byte[] to) {
+    }
+
+    public static void transferTaint(byte[] from, byte[] to) {
+    }
+
+    public static void transferTaint(byte[] from, String to) {
+    }
+
     // stop taint analysis
     public static void stopAnalysis() {
     }

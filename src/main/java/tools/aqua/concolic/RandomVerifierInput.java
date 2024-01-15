@@ -9,8 +9,8 @@ import java.util.ArrayList;
 import java.util.Random;
 
 public final class RandomVerifierInput {
-  private static int[] preSeededInts = {0,2,4,8,16,-2,-4,-8,-16};
-  private static float[] preSeededFloats = {0f,2f,4f,8f,16f,-2f,-4f,-8f,-16f};
+  private static int[] preSeededInts = {0,42};
+  private static float[] preSeededFloats = {0f,42f};
   private static ArrayList<Integer> oldIntVals = new ArrayList();
   private static ArrayList<Float> oldFloatVals = new ArrayList();
   private static Random r = new Random();

@@ -59,10 +59,10 @@ public final class RandomVerifierInput {
   private static int generateInt(){
       int random = -2000;
       double chance = r.nextGaussian();
-      if (chance < -1){
-        int index = r.nextInt(preSeededInts.length - 1);
+      if (chance < -0.75){
+        int index = r.nextInt(preSeededInts.length);
         random = preSeededInts[index];
-      } else if(chance > 1 && oldIntVals.size() > 0){
+      } else if(chance > 0.75 && oldIntVals.size() > 0){
         int index = r.nextInt(oldIntVals.size());
         random = oldIntVals.get(index);
       }else{

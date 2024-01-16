@@ -66,7 +66,7 @@ public final class RandomVerifierInput {
         int index = r.nextInt(oldIntVals.size());
         random = oldIntVals.get(index);
       }else{
-        random = r.nextInt(1000);
+        random = r.nextInt(100);
         if (r.nextBoolean()){
           random = random*-1;
         }
@@ -86,7 +86,7 @@ public final class RandomVerifierInput {
       int index = r.nextInt(oldFloatVals.size());
       random = oldFloatVals.get(index);
     }else{
-      random = r.nextFloat() * 1000;
+      random = r.nextFloat() * 100;
       if (r.nextBoolean()){
         random = random*-1;
       }

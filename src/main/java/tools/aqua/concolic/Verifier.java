@@ -46,4 +46,7 @@ public final class Verifier {
     return new String();
   }
 
+  public static Object nondetObject() {
+    return null;
+  }
 }

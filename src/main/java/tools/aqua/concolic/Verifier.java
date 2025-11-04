@@ -49,4 +49,8 @@ public final class Verifier {
   public static Object nondetObject() {
     return null;
   }
+
+  public static <T> T nondetObject(Class<T> type, ObjectFactory<T> factory) {
+    return factory.createObject();
+  }  
 }

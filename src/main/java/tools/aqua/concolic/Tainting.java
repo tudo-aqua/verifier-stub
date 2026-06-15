@@ -19,6 +19,7 @@ public class Tainting {
     public static final int WEAK_CRYPTO_CONFIG = 8;
     public static final int PATH_TRAVERSAL = 9;
     public static final int XPATH_INJECTION = 10;
+    public static final int LDAP_INJECTION = 11;
 
     // taint value with color
     public static int taint(int value, int color) {

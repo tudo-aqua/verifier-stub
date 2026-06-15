@@ -6,6 +6,7 @@ import static tools.aqua.concolic.Tainting.CMD_INJECTION;
 import static tools.aqua.concolic.Tainting.WEAK_HASHING_CONFIG;
 import static tools.aqua.concolic.Tainting.WEAK_CRYPTO_CONFIG;
 import static tools.aqua.concolic.Tainting.XPATH_INJECTION;
+import static tools.aqua.concolic.Tainting.LDAP_INJECTION;
 
 public class TaintIdResolver {
 
@@ -18,6 +19,7 @@ public class TaintIdResolver {
 		case WEAK_HASHING_CONFIG: System.out.println("WEAK_HASHING_CONFIG");break;
 		case WEAK_CRYPTO_CONFIG: System.out.println("WEAK_CRYPTO_CONFIG");break;
         case XPATH_INJECTION: System.out.println("XPATH_INJECTION_TAINT");break;
+        case LDAP_INJECTION: System.out.println("LDAP_INJECTION_TAINT");break;
 		default: System.out.println("unkown taint id: {}".formatted(taintId));
 		}
 	}

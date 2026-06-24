@@ -8,6 +8,7 @@ import static tools.aqua.concolic.Tainting.WEAK_CRYPTO_CONFIG;
 import static tools.aqua.concolic.Tainting.XPATH_INJECTION;
 import static tools.aqua.concolic.Tainting.LDAP_INJECTION;
 import static tools.aqua.concolic.Tainting.PATH_TRAVERSAL;
+import static tools.aqua.concolic.Tainting.TRUST_BOUND;
 
 public class TaintIdResolver {
 
@@ -37,6 +38,9 @@ public class TaintIdResolver {
                 break;
             case PATH_TRAVERSAL:
                 System.out.println("PATH_TRAVERSAL_TAINT");
+                break;
+            case TRUST_BOUND:
+                System.out.println("TRUST_BOUND_TAINT");
                 break;
             default:
                 System.out.println("unkown taint id: {}".formatted(taintId));

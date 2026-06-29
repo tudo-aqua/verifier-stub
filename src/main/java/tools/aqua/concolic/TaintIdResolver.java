@@ -9,6 +9,7 @@ import static tools.aqua.concolic.Tainting.XPATH_INJECTION;
 import static tools.aqua.concolic.Tainting.LDAP_INJECTION;
 import static tools.aqua.concolic.Tainting.PATH_TRAVERSAL;
 import static tools.aqua.concolic.Tainting.TRUST_BOUND;
+import static tools.aqua.concolic.Tainting.SECURE_COOKIE_CONFIG;
 
 public class TaintIdResolver {
 
@@ -41,6 +42,9 @@ public class TaintIdResolver {
                 break;
             case TRUST_BOUND:
                 System.out.println("TRUST_BOUND_TAINT");
+                break;
+            case SECURE_COOKIE_CONFIG:
+                System.out.println("SECURE_COOKIE_CONFIG");
                 break;
             default:
                 System.out.println("unkown taint id: {}".formatted(taintId));
